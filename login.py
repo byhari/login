@@ -9,7 +9,7 @@ from datetime import datetime
 def check_login(username, password):
     try:
         # Initialize the Oracle Client
-        oracledb.init_oracle_client(lib_dir=r"D:\Belajar\Python\002")  # Adjust the path as needed
+        oracledb.init_oracle_client(lib_dir=r"./login")  # Adjust the path as needed
         conn = oracledb.connect(user='fasdollar', password='fasdollar', dsn='172.25.1.83:1521/empdb01')
         cursor = conn.cursor()
         
